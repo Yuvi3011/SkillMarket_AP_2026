@@ -1,0 +1,23 @@
+{
+  "name": "skillmarket-exchange-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SkillMarket Module 3 - Skill Exchange & Smart Matching API (Express + PostgreSQL)",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
