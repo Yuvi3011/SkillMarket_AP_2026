@@ -1,0 +1,324 @@
+
+
+.exchange-hero {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 64px 0 56px;
+  border-bottom: 2px solid var(--lime);
+}
+
+.exchange-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(213, 243, 106, 0.12);
+  color: var(--lime);
+  border: 1px solid rgba(213, 243, 106, 0.3);
+  padding: 5px 14px;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.exchange-hero h1 {
+  font-size: 3.2rem;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  margin-bottom: 16px;
+}
+.exchange-hero h1 span { color: var(--lime); }
+
+.exchange-hero p {
+  color: rgba(243, 240, 232, 0.65);
+  font-size: 1.05rem;
+  max-width: 520px;
+  margin-bottom: 28px;
+}
+
+.exchange-hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.skill-tag {
+  display: inline-block;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1.5px solid var(--border);
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 3px 3px 3px 0;
+}
+.skill-tag.offered { background: rgba(213,243,106,0.15); border-color: var(--lime); color: var(--ink); }
+.skill-tag.wanted  { background: rgba(52,87,255,0.1);   border-color: var(--blue);  color: var(--blue); }
+.skill-tag.match   { background: var(--lime); border-color: var(--lime); color: var(--ink); }
+
+.exchange-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  padding: 24px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.exchange-card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 4px 20px rgba(52,87,255,0.08);
+}
+
+.exchange-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.exchange-card-user { display: flex; align-items: center; gap: 10px; }
+
+.exchange-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.exchange-card-name { font-weight: 700; font-size: 0.95rem; }
+.exchange-card-mode {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+
+.exchange-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-family: 'Space Grotesk', sans-serif;
+  white-space: nowrap;
+}
+.exchange-badge.active   { background: rgba(213,243,106,0.2); color: var(--ink); border: 1px solid var(--lime); }
+.exchange-badge.matched  { background: rgba(52,87,255,0.1);  color: var(--blue); border: 1px solid var(--blue); }
+
+.exchange-skill-row { display: flex; align-items: flex-start; gap: 8px; flex-wrap: wrap; }
+.exchange-skill-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-family: 'Space Grotesk', sans-serif;
+  min-width: 56px;
+  margin-top: 5px;
+}
+
+.exchange-card-desc {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.exchange-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  gap: 10px;
+}
+
+.exchange-card-meta { font-size: 0.78rem; color: var(--ink-soft); }
+
+.exchange-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.match-card {
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  padding: 24px;
+  position: relative;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.match-card:hover { border-color: var(--lime); box-shadow: 0 4px 24px rgba(213,243,106,0.15); }
+
+.match-score-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--lime);
+  color: var(--ink);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+.match-type-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.match-type-label.reciprocal { color: var(--ink); background: var(--lime); display: inline-block; padding: 2px 8px; border-radius: 2px; }
+
+.match-name { font-size: 1.1rem; font-weight: 700; margin: 8px 0 4px; }
+
+.match-explain {
+  background: rgba(213,243,106,0.1);
+  border: 1px solid rgba(213,243,106,0.4);
+  border-radius: 4px;
+  padding: 12px;
+  margin: 14px 0;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.match-explain strong { color: var(--ink); }
+
+.requests-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 28px;
+}
+.req-tab {
+  background: none;
+  border: none;
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.2s, border-color 0.2s;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.req-tab.active { color: var(--blue); border-bottom-color: var(--blue); }
+
+.request-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.request-status-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-family: 'Space Grotesk', sans-serif;
+  white-space: nowrap;
+}
+.request-status-badge.pending  { background: rgba(255,112,79,0.12);  color: var(--coral); border: 1px solid var(--coral); }
+.request-status-badge.accepted { background: rgba(213,243,106,0.2);  color: var(--ink);   border: 1px solid var(--lime); }
+.request-status-badge.rejected { background: rgba(74,79,76,0.1);     color: var(--ink-soft); border: 1px solid var(--border); }
+
+.request-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+
+.my-exchange-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  transition: border-color 0.2s;
+}
+.my-exchange-card.ongoing   { border-left: 4px solid var(--lime); }
+.my-exchange-card.completed { border-left: 4px solid var(--border); opacity: 0.75; }
+
+.exchange-form-page { padding: 48px 0 80px; }
+
+.exchange-form-header { margin-bottom: 36px; }
+.exchange-form-header h1 { font-size: 2.4rem; letter-spacing: -0.02em; }
+.exchange-form-header p  { color: var(--ink-soft); margin-top: 8px; }
+
+.skill-input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.skill-input-row input { flex: 1; }
+
+.skill-tags-preview { margin-top: 8px; min-height: 28px; }
+
+.form-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .form-two-col { grid-template-columns: 1fr; }
+  .exchange-hero h1 { font-size: 2.2rem; }
+  .exchange-grid { grid-template-columns: 1fr; }
+  .request-card { flex-direction: column; }
+}
+
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-family: 'Space Grotesk', sans-serif;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--ink-soft);
+}
+.empty-state h3 { font-size: 1.3rem; margin-bottom: 10px; color: var(--ink); }
+.empty-state p  { font-size: 0.95rem; margin-bottom: 24px; }
+
+.loading-state {
+  text-align: center;
+  padding: 60px;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
